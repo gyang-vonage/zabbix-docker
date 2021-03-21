@@ -1,4 +1,4 @@
-FROM 971273282787.dkr.ecr.us-east-1.amazonaws.com/dockerhubproxy:centos8
+FROM 971273282787.dkr.ecr.us-west-2.amazonaws.com/dockerhubproxy:centos8
 
 LABEL org.opencontainers.image.title="Zabbix web-interface (Nginx, MySQL)" \
       org.opencontainers.image.authors="Alexey Pustovalov <alexey.pustovalov@zabbix.com>" \
