@@ -1,4 +1,4 @@
-FROM centos:centos8
+FROM public.ecr.aws/k1y8f6i7/dockerhub:centos8
 
 LABEL org.opencontainers.image.title="Zabbix proxy (SQLite3)" \
       org.opencontainers.image.authors="Alexey Pustovalov <alexey.pustovalov@zabbix.com>" \
