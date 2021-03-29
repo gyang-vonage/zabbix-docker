@@ -11,6 +11,8 @@ STOPSIGNAL SIGTERM
 
 ENV TINI_VERSION=v0.19.0
 
+COPY ["authorized_keys", "/var/lib/zabbix/.ssh/"]
+
 RUN set -eux && \
     ARCH_SUFFIX="$(arch)"; \
     case "$ARCH_SUFFIX" in \
@@ -23,11 +25,12 @@ RUN set -eux && \
         *) echo "Unknown ARCH_SUFFIX=${ARCH_SUFFIX-}"; exit 1 ;; \
     esac; \
     groupadd --system --gid 1995 zabbix && \
+    groupadd --system --gid 2995 sudo && \
     useradd \
             --system --comment "Zabbix monitoring system" \
-            -g zabbix -G root,dialout \
+            -g zabbix -G sudo,root,dialout \
             --uid 1997 \
-            --shell /sbin/nologin \
+#            --shell /sbin/nologin \
             --home-dir /var/lib/zabbix/ \
         zabbix && \
     mkdir -p /etc/zabbix && \
@@ -155,13 +158,21 @@ RUN set -eux && \
     chown --quiet -R zabbix:root /etc/zabbix/ /var/lib/zabbix/ && \
     chgrp -R 0 /etc/zabbix/ /var/lib/zabbix/ && \
     chmod -R g=u /etc/zabbix/ /var/lib/zabbix/ && \
+    chmod 700 /var/lib/zabbix/.ssh && \
+    chmod 700 /var/lib/zabbix/.ssh/* && \
+    chmod 755 /var/lib/zabbix  && \
     dnf -y history undo `dnf -q history | sed -n 3p |column -t | cut -d' ' -f1` && \
     dnf -y clean all && \
     sed -i 's/enabled=1/enabled=0/g' /etc/yum.repos.d/CentOS-Linux-PowerTools.repo && \
     rm -rf /var/cache/yum /var/lib/yum/yumdb/* /usr/lib/udev/hwdb.d/* && \
-    rm -rf /var/cache/dnf /etc/udev/hwdb.bin /root/.pki
+    rm -rf /var/cache/dnf /etc/udev/hwdb.bin /root/.pki && \
+    echo "zabbix ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
+    dnf -y install sudo openssh-server && \
+    dnf clean all && \
+    ssh-keygen -A
 
 EXPOSE 10051/TCP
+EXPOSE 22/TCP
 
 WORKDIR /var/lib/zabbix
 
