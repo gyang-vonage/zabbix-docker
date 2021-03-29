@@ -1,0 +1,170 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 12 (0xc)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: DC=org, DC=monitoring, O=Vonage, OU=Vonage Signing CA, CN=Vonage Signing CA
+        Validity
+            Not Before: Mar 29 15:30:35 2021 GMT
+            Not After : Mar 29 15:30:35 2023 GMT
+        Subject: DC=org, DC=monitoring, O=Vonage, CN=zabbix.mon1.mem.dev.use1.vonagenetworks.net
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b8:4e:ab:20:97:e9:35:3f:38:2e:aa:91:46:14:
+                    8e:35:ae:18:ff:65:54:cb:ef:b8:d7:f1:d2:33:c3:
+                    4e:dd:3b:9f:b4:16:4a:9a:14:c0:aa:a3:bd:d0:e0:
+                    4d:b3:1f:9c:da:df:cc:e8:ed:df:aa:0f:04:70:fe:
+                    11:22:80:23:c0:6a:79:ee:5a:70:bb:7c:d3:fa:09:
+                    1c:4f:9a:eb:05:64:e9:54:80:17:f8:6d:63:87:35:
+                    6e:69:66:2f:7e:f8:d5:75:6e:65:29:d6:8f:b8:37:
+                    24:c7:19:6a:9b:a3:7d:55:93:7a:66:bc:5f:a0:bc:
+                    b3:79:1d:32:b1:d8:12:cc:02:b5:f6:3c:19:e9:c6:
+                    0c:f9:05:be:86:60:e9:c4:80:28:96:32:5a:40:fb:
+                    5a:2a:f0:6a:8c:7e:5d:b7:ab:dd:2f:45:65:1e:90:
+                    e4:3b:1e:0a:cf:e3:3d:b3:5d:5d:cf:25:98:28:10:
+                    a2:33:c4:00:07:77:34:e4:8a:e1:80:84:7a:be:bf:
+                    3d:9f:26:17:00:4f:94:9d:16:c2:0c:f4:96:b2:52:
+                    c0:80:ba:f5:d5:e7:4c:df:c1:e8:f6:ef:68:b9:c7:
+                    33:96:a0:a6:98:fd:ac:68:a4:bd:f8:b2:6a:08:17:
+                    e7:31:06:79:ee:4a:7a:cf:f2:01:43:5b:cf:25:6c:
+                    0a:89
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Key Identifier: 
+                57:C8:EC:D0:8F:04:E0:9D:04:D7:CE:83:44:41:43:30:B3:04:B7:18
+            X509v3 Authority Key Identifier: 
+                keyid:3B:75:BF:53:4C:32:2E:79:83:F5:31:E3:B9:31:17:BE:66:13:1A:44
+
+            X509v3 Subject Alternative Name: 
+                DNS:zabbix.mon1.mem.dev.use1.vonagenetworks.net
+    Signature Algorithm: sha1WithRSAEncryption
+         90:49:60:b1:86:e2:c0:e2:c4:7b:0c:b3:7f:0b:73:72:b3:19:
+         2e:81:a8:ec:0b:5d:86:1f:dc:60:7f:80:4f:d0:d2:cf:28:11:
+         0c:51:2f:93:1e:07:e4:ed:97:bb:3c:84:5c:a1:6c:97:5b:02:
+         83:78:9c:d2:8d:b9:1a:c4:a7:03:db:c6:73:de:98:0c:40:e5:
+         dd:7f:55:1c:65:d6:1d:9a:7b:06:ae:07:02:a4:39:bb:39:e2:
+         0a:c4:ad:6d:38:8a:fb:7c:86:f0:1f:eb:00:dd:68:5c:96:59:
+         1d:78:1e:9a:39:c2:c8:48:3e:cd:73:11:50:2a:13:3a:63:f6:
+         9b:1f:18:62:50:87:98:54:6f:e1:61:94:73:fe:8d:fd:52:a3:
+         99:91:88:f2:3b:a2:76:e5:78:6f:89:45:54:12:3f:98:69:47:
+         bf:ea:61:12:88:27:39:f5:14:4a:18:00:67:41:a9:fb:97:5e:
+         87:3f:da:fd:61:d9:03:7d:83:4c:8b:fc:49:26:ab:49:ea:dd:
+         b6:1b:9e:e1:70:f5:a2:7e:b8:43:07:b7:c9:1e:06:59:92:51:
+         76:30:c6:74:6a:a3:a9:6b:09:b4:18:ea:a1:43:95:cf:00:87:
+         9a:07:be:b7:1c:95:1f:de:5d:03:8a:a5:a5:bf:87:5d:55:c3:
+         83:78:65:31
+-----BEGIN CERTIFICATE-----
+MIIEIzCCAwugAwIBAgIBDDANBgkqhkiG9w0BAQUFADB6MRMwEQYKCZImiZPyLGQB
+GRYDb3JnMRowGAYKCZImiZPyLGQBGRYKbW9uaXRvcmluZzEPMA0GA1UECgwGVm9u
+YWdlMRowGAYDVQQLDBFWb25hZ2UgU2lnbmluZyBDQTEaMBgGA1UEAwwRVm9uYWdl
+IFNpZ25pbmcgQ0EwHhcNMjEwMzI5MTUzMDM1WhcNMjMwMzI5MTUzMDM1WjB4MRMw
+EQYKCZImiZPyLGQBGRYDb3JnMRowGAYKCZImiZPyLGQBGRYKbW9uaXRvcmluZzEP
+MA0GA1UECgwGVm9uYWdlMTQwMgYDVQQDDCt6YWJiaXgubW9uMS5tZW0uZGV2LnVz
+ZTEudm9uYWdlbmV0d29ya3MubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAuE6rIJfpNT84LqqRRhSONa4Y/2VUy++41/HSM8NO3TuftBZKmhTAqqO9
+0OBNsx+c2t/M6O3fqg8EcP4RIoAjwGp57lpwu3zT+gkcT5rrBWTpVIAX+G1jhzVu
+aWYvfvjVdW5lKdaPuDckxxlqm6N9VZN6ZrxfoLyzeR0ysdgSzAK19jwZ6cYM+QW+
+hmDpxIAoljJaQPtaKvBqjH5dt6vdL0VlHpDkOx4Kz+M9s11dzyWYKBCiM8QAB3c0
+5IrhgIR6vr89nyYXAE+UnRbCDPSWslLAgLr11edM38Ho9u9oucczlqCmmP2saKS9
++LJqCBfnMQZ57kp6z/IBQ1vPJWwKiQIDAQABo4G1MIGyMA4GA1UdDwEB/wQEAwIF
+oDAJBgNVHRMEAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNV
+HQ4EFgQUV8js0I8E4J0E186DREFDMLMEtxgwHwYDVR0jBBgwFoAUO3W/U0wyLnmD
+9THjuTEXvmYTGkQwNgYDVR0RBC8wLYIremFiYml4Lm1vbjEubWVtLmRldi51c2Ux
+LnZvbmFnZW5ldHdvcmtzLm5ldDANBgkqhkiG9w0BAQUFAAOCAQEAkElgsYbiwOLE
+ewyzfwtzcrMZLoGo7Atdhh/cYH+AT9DSzygRDFEvkx4H5O2XuzyEXKFsl1sCg3ic
+0o25GsSnA9vGc96YDEDl3X9VHGXWHZp7Bq4HAqQ5uzniCsStbTiK+3yG8B/rAN1o
+XJZZHXgemjnCyEg+zXMRUCoTOmP2mx8YYlCHmFRv4WGUc/6N/VKjmZGI8juiduV4
+b4lFVBI/mGlHv+phEognOfUUShgAZ0Gp+5dehz/a/WHZA32DTIv8SSarSerdthue
+4XD1on64Qwe3yR4GWZJRdjDGdGqjqWsJtBjqoUOVzwCHmge+txyVH95dA4qlpb+H
+XVXDg3hlMQ==
+-----END CERTIFICATE-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: DC=org, DC=monitoring, O=Vonage, OU=Vonage Root CA, CN=Vonage Root CA
+        Validity
+            Not Before: Mar 26 12:32:30 2021 GMT
+            Not After : Mar 26 12:32:30 2031 GMT
+        Subject: DC=org, DC=monitoring, O=Vonage, OU=Vonage Signing CA, CN=Vonage Signing CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:e8:4b:4b:e4:bd:86:4f:ac:83:13:01:ed:4a:e1:
+                    f7:5e:f1:5c:3e:de:3c:ad:75:79:25:c7:3b:1e:7c:
+                    cd:37:9b:a2:26:2b:f5:14:e3:e9:9b:b3:90:cc:15:
+                    ca:1d:c0:f4:0b:6e:e6:ce:c6:17:4d:7b:0b:37:bb:
+                    ec:20:2d:8c:bc:f4:77:63:b3:39:83:43:85:0d:31:
+                    f0:ac:33:ce:85:6e:9a:4a:ad:ef:2f:e7:4c:5c:5e:
+                    b6:18:d8:dc:68:32:af:6f:d0:63:e4:29:f1:45:64:
+                    85:a2:d9:94:ee:42:5e:f6:64:d6:d6:d1:f8:eb:a5:
+                    a4:5b:11:90:a9:1a:70:b4:92:df:ad:7a:71:de:7b:
+                    57:8e:a3:e2:44:4e:20:af:07:61:b1:fa:a1:e9:d9:
+                    d4:c6:2e:5f:39:17:77:37:8e:c6:23:19:b9:86:07:
+                    d5:86:a6:ef:fb:c6:c4:7b:12:17:5f:fd:6f:4d:89:
+                    3b:0a:ec:b0:d4:e1:bd:2b:57:2b:08:a7:04:b3:b8:
+                    1b:2e:49:2e:e2:09:20:5a:29:67:83:6c:ee:8a:38:
+                    77:72:2a:6d:aa:19:6a:e0:2f:d0:8e:cc:7e:05:59:
+                    6c:e4:0e:9f:e4:1e:5c:2d:94:41:e0:54:7a:f1:00:
+                    d6:61:0d:c6:04:1c:a0:bb:ca:98:cb:5f:31:3d:02:
+                    eb:c9
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                3B:75:BF:53:4C:32:2E:79:83:F5:31:E3:B9:31:17:BE:66:13:1A:44
+            X509v3 Authority Key Identifier: 
+                keyid:D0:98:DC:CD:D3:F4:36:FE:73:BF:59:10:50:FD:D4:70:C1:D8:7C:07
+
+    Signature Algorithm: sha1WithRSAEncryption
+         77:27:71:0d:b6:cf:5b:8c:a4:fb:98:88:4b:1f:7b:7c:43:70:
+         3b:05:2b:d0:26:18:50:ed:75:9d:ea:79:c8:03:1d:4b:3d:f9:
+         56:e0:e1:d8:bb:d3:e5:0e:62:95:5b:9f:9d:9d:d8:56:d5:63:
+         b6:83:0b:c2:07:9d:28:79:e7:9b:bf:3a:c0:7b:c2:33:49:23:
+         94:74:a3:c4:28:c4:19:3e:be:47:a0:f4:dc:7d:61:b7:0c:fa:
+         31:50:83:ac:ec:74:98:9f:7c:33:1b:b2:6b:d5:23:06:05:36:
+         1f:d6:90:c3:c0:68:a6:fa:d5:fe:a4:61:2e:2e:fc:21:3f:41:
+         6f:be:ba:2c:27:35:cc:e5:66:78:92:67:ed:c1:af:e9:b0:fe:
+         1f:63:7e:44:70:23:e1:0d:a2:e7:51:0a:20:2d:13:a4:bd:71:
+         8c:80:61:a5:26:62:eb:8f:1a:ae:b1:6f:a2:a1:f7:f0:21:81:
+         1a:79:e0:2c:10:d1:65:eb:d5:08:31:7d:b3:8f:bb:03:51:dd:
+         44:00:49:79:b1:79:11:54:9f:78:82:5a:cd:a1:18:19:4f:fb:
+         92:52:03:0f:d6:e8:84:ee:93:78:22:1c:65:a4:a0:f2:62:5d:
+         95:b6:ac:2e:c4:4e:96:5a:ab:04:bb:16:07:42:ac:13:29:45:
+         00:e2:a2:d3
+-----BEGIN CERTIFICATE-----
+MIIDzzCCAregAwIBAgIBAjANBgkqhkiG9w0BAQUFADB0MRMwEQYKCZImiZPyLGQB
+GRYDb3JnMRowGAYKCZImiZPyLGQBGRYKbW9uaXRvcmluZzEPMA0GA1UECgwGVm9u
+YWdlMRcwFQYDVQQLDA5Wb25hZ2UgUm9vdCBDQTEXMBUGA1UEAwwOVm9uYWdlIFJv
+b3QgQ0EwHhcNMjEwMzI2MTIzMjMwWhcNMzEwMzI2MTIzMjMwWjB6MRMwEQYKCZIm
+iZPyLGQBGRYDb3JnMRowGAYKCZImiZPyLGQBGRYKbW9uaXRvcmluZzEPMA0GA1UE
+CgwGVm9uYWdlMRowGAYDVQQLDBFWb25hZ2UgU2lnbmluZyBDQTEaMBgGA1UEAwwR
+Vm9uYWdlIFNpZ25pbmcgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQDoS0vkvYZPrIMTAe1K4fde8Vw+3jytdXklxzsefM03m6ImK/UU4+mbs5DMFcod
+wPQLbubOxhdNews3u+wgLYy89HdjszmDQ4UNMfCsM86FbppKre8v50xcXrYY2Nxo
+Mq9v0GPkKfFFZIWi2ZTuQl72ZNbW0fjrpaRbEZCpGnC0kt+tenHee1eOo+JETiCv
+B2Gx+qHp2dTGLl85F3c3jsYjGbmGB9WGpu/7xsR7Ehdf/W9NiTsK7LDU4b0rVysI
+pwSzuBsuSS7iCSBaKWeDbO6KOHdyKm2qGWrgL9COzH4FWWzkDp/kHlwtlEHgVHrx
+ANZhDcYEHKC7ypjLXzE9AuvJAgMBAAGjZjBkMA4GA1UdDwEB/wQEAwIBBjASBgNV
+HRMBAf8ECDAGAQH/AgEAMB0GA1UdDgQWBBQ7db9TTDIueYP1MeO5MRe+ZhMaRDAf
+BgNVHSMEGDAWgBTQmNzN0/Q2/nO/WRBQ/dRwwdh8BzANBgkqhkiG9w0BAQUFAAOC
+AQEAdydxDbbPW4yk+5iISx97fENwOwUr0CYYUO11nep5yAMdSz35VuDh2LvT5Q5i
+lVufnZ3YVtVjtoMLwgedKHnnm786wHvCM0kjlHSjxCjEGT6+R6D03H1htwz6MVCD
+rOx0mJ98Mxuya9UjBgU2H9aQw8BopvrV/qRhLi78IT9Bb766LCc1zOVmeJJn7cGv
+6bD+H2N+RHAj4Q2i51EKIC0TpL1xjIBhpSZi648arrFvoqH38CGBGnngLBDRZevV
+CDF9s4+7A1HdRABJebF5EVSfeIJazaEYGU/7klIDD9bohO6TeCIcZaSg8mJdlbas
+LsROllqrBLsWB0KsEylFAOKi0w==
+-----END CERTIFICATE-----

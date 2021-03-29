@@ -87,6 +87,7 @@ LABEL org.opencontainers.image.documentation="https://www.zabbix.com/documentati
       org.opencontainers.image.version="${ZBX_VERSION}" \
       org.opencontainers.image.source="${ZBX_SOURCES}"
 
+COPY ["certs/*", "/var/lib/zabbix/enc/"]
 RUN set -eux && \
     sed -i 's/enabled=0/enabled=1/g' /etc/yum.repos.d/CentOS-Linux-PowerTools.repo && \
     dnf --quiet makecache && \
@@ -145,6 +146,14 @@ RUN set -eux && \
     chown --quiet -R zabbix:root /etc/zabbix/ /var/lib/zabbix/ && \
     chgrp -R 0 /etc/zabbix/ /var/lib/zabbix/ && \
     chmod -R g=u /etc/zabbix/ /var/lib/zabbix/ && \
+
+
+    chown -R zabbix:zabbix /var/lib/zabbix/enc/ && \
+    chmod 644 /var/lib/zabbix/enc/zabbix_ca_file && \
+    chmod 644 /var/lib/zabbix/enc/zabbix-proxy-sqlite3.crt && \
+    chmod 600 /var/lib/zabbix/enc/zabbix-proxy-sqlite3.key && \
+
+
     dnf -y history undo `dnf -q history | sed -n 3p |column -t | cut -d' ' -f1` && \
     dnf -y clean all && \
     sed -i 's/enabled=1/enabled=0/g' /etc/yum.repos.d/CentOS-Linux-PowerTools.repo && \
