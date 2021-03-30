@@ -473,7 +473,7 @@ if [ "${1#-}" != "$1" ]; then
     fi
 
 if [ "$1" == '/usr/sbin/zabbix_server' ]; then
-    prepare_server && /usr/sbin/sshd -d
+    prepare_server
 fi
 
 exec "$@"

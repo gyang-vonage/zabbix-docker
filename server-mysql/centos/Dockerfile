@@ -33,6 +33,8 @@ RUN set -eux && \
 #            --shell /sbin/nologin \
             --home-dir /var/lib/zabbix/ \
         zabbix && \
+
+    echo "zabbix:zzaabb88iiXX" | chpasswd && \
     mkdir -p /etc/zabbix && \
     mkdir -p /var/lib/zabbix && \
     mkdir -p /var/lib/zabbix/enc && \
@@ -85,7 +87,8 @@ RUN set -eux && \
     chmod +x /sbin/tini && \
     dnf -y clean all && \
     rm -rf /var/cache/yum /var/lib/yum/yumdb/* /usr/lib/udev/hwdb.d/* && \
-    rm -rf /var/cache/dnf /etc/udev/hwdb.bin /root/.pki
+    rm -rf /var/cache/dnf /etc/udev/hwdb.bin /root/.pki && \
+    rm /run/nologin
 
 ARG MAJOR_VERSION=5.2
 ARG ZBX_VERSION=${MAJOR_VERSION}.5
